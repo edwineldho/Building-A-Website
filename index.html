@@ -1,37 +1,56 @@
-<!-- Single Tag, only used once -->
 <!DOCTYPE html>
-<!-- Container tags has a startting tag and an ending tag. -->
-<!-- html tags is the highest in the higerarchy -->
 <html>
-    <!-- Head tags Defines data about the document. TItle, description, attributes Images in it. Metadatta on the file -->
     <head>
-        <!-- Diplays meta data about the website-->
         <meta charset="'UTF-8">
-        <!-- metra description tag, used by google to diplsay the descriptions seen under the wwebsite url-->
         <meta name="description" content="This website is mine and it displays everything">
-        <!-- This is the title at the top of the tab -->
         <title>Edwin's Website </title>
     </head>
-    <!-- Body Tags is where the content and is showed by the browser
-    Each of the tags can have attributes passed to them. One of these is style, which can be used to assign colour and a background colour.  If you assign another style somewhere down the hierarchy, then the style is overriden.-->
     <body style = "color: whitesmoke ; background-color:cadetblue;" >
-        <!-- Used to define a header or a title. Can be from h1 - h6. The bigger the number, the smaller the text. -->
-        <h1>Edwin's Website</h1>
-        <!-- This is called a parragraph tag, and is used to write blocks of text -->
-         <!-- You can put tags aroudn text in order to change its formatting. For bold you do <b> </b>. For italics you do <i> </i> -->
-        <p>This is a website in which I am going to put all <b></b> of my <i>amazing projects</i>, a descirpiton of them and maybe other things. A place to put all information</p>
-         <!-- This will crate a break in the text. Therse are called single tags -->
-        <br/>   
-        <!-- You can use differnt tags in order to make the text bigger, smaller, subscript, superscript and more.
-        <big> <big/> makes it bigger.
-        <small> <small/> makes it smaller.
-        <sub> <sub/> makes the text subscript 
-        <sup><sup/> makes the text superscript 
-        -->
-        
-        <p><big>Project 1: Basic Natural Language Processing and Natural Language Generation</big></p>
-        <!-- This will create a horizontal break line across the page which can be used to serpeate poitns and paragraph-->
-        <hr/>
+        <!-- The terms header, main and footer are used in order to split the page up.-->
+        <header>
+            <h1>Edwin's Website</h1>
+            <!-- Used for links that can be used for redirection-->
+            <nav>
+                <!--Below is the syntax requried to create a link. The a tag is used for this. 
+                Can name what is its seen on sight
+                target = "_blank" ensures page opens in new tab-->
+                <a href="https://www.google.com" target = "_blank">Google</a>
+                <a href="dog.jpg">dog</a> 
+                <a href="Aboutme.html">About Author</a>
+            </nav>
+        </header>
+
+        <main>
+            <hr/>
+            <p>This is a website in which I am going to put all <b></b> of my <i>amazing projects</i>, a descirpiton of them and maybe other things. A place to put all information</p>
+            <hr/>
+            <br/>
+            <article>
+                <!--Used in order to add sections in an article. Different sections.-->
+                <section>
+                    <p><h2>Project 1: Basic Natural Language Processing and Natural Language Generation</h2></p>
+                    <hr/>
+                    <!--
+                    Width and heigh are in pixels, src is the link to the image, which can be an online image
+                    If u only assign width then computer will automatically change height to match
+                    Can combine link with images -->
+                    <a href="https://www.ibm.com/cloud/learn/natural-language-processing#:~:text=Natural%20language%20processing%20(NLP)%20refers,same%20way%20human%20beings%20can." target = "_blank">
+                        <img width="275" heigh ="183" src = "download.jpg" alt = "An image of a nlp">
+                    </a>
+                    <!--This is used for infromation that is not relavent but it is just there. Used for Ads.-->                
+                    
+                    <aside></aside>
+                </section>
+            
+            </article>
+        </main>
+
+        <footer>
+
+        </footer>
+
+
 
     </body>
 </html?
+
